@@ -8,3 +8,4 @@ def sumOfMultiples(self, n: int) -> int:
             elif i%5 == 0:
                 sum357+=i
         return sum357
+    
