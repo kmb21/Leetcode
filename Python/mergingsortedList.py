@@ -1,4 +1,4 @@
- def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         sortedlist = temp = ListNode()
         while list1 != None and list2 != None:
             if list1.val < list2.val:
@@ -20,3 +20,4 @@
                 temp = temp.next
                 list1 = list1.next
         return sortedlist.next
+    
