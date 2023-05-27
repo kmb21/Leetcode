@@ -9,3 +9,7 @@ def twoSum(nums, target):
         for index2 in range(index1+1, len(nums)):
             if nums[index1] + nums[index2] == target:
                 return [index1, index2]
+lst = ["hi","helo","bye"]
+z = enumerate(lst)
+for i,j in z:
+    print(i,j) 
