@@ -1,9 +1,12 @@
-def mySqrt(x):
-    """
-    :type x: int
-    :rtype: int
-    """
-    i = 0
-    while (i * i) <= x:
-        i += 1
-    return i - 1
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        #Using newton Raphson's method
+        if x < 2:
+            return x
+
+        temp = x
+        while True:
+            root = 0.5*(temp+x/temp)
+            if abs(root-temp) < 1e-7:
+                return int(root)
+            temp = root
